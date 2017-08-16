@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7453F326-7FB7-7DE3-06C2-89C10A40CA79}</ProjectGuid>
+    <ProjectGuid>{3F59996C-A261-CC41-C562-C91ED40820D1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>Assembly-CSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -123,7 +123,9 @@
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\Environment\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
-    <Compile Include="Assets\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerMotor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Environment\Particles\Shaders\PriorityParticleAdd.shader" />

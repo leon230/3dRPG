@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F77E53A0-95F1-ACAC-9818-0E8E1A8999EC}</ProjectGuid>
+    <ProjectGuid>{773EC0B5-FDC0-7942-18DD-6C056B6E7E04}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -117,9 +117,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="3DRPG.csproj">
-      <Project>{7453F326-7FB7-7DE3-06C2-89C10A40CA79}</Project>
-      <Name>3DRPG</Name>
+    <ProjectReference Include="3dRPG.csproj">
+      <Project>{3F59996C-A261-CC41-C562-C91ED40820D1}</Project>
+      <Name>3dRPG</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
