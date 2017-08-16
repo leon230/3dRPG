@@ -35,5 +35,16 @@ public class PlayerController : MonoBehaviour
 
             }
         }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, 100))
+            {
+                //Check if interactable
+            }
+        }
     }
 }
