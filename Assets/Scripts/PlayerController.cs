@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public LayerMask movementMask;
+    public Interactable actualFocus;
 
     Camera camera;
     PlayerMotor playerMotor;
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
 
 
                 //Stop focusing any obejcts
+                removeFocus();
 
             }
         }
@@ -44,7 +46,24 @@ public class PlayerController : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 100))
             {
                 //Check if interactable
+               Interactable interactable = hit.collider.GetComponent<Interactable>();
+
+                if (interactable != null)
+                {
+                    setFocus(interactable);
+                }
+
             }
         }
+    }
+
+    void setFocus (Interactable _interactable)
+    {
+        actualFocus = _interactable;
+    }
+
+    void removeFocus()
+    {
+        actualFocus = null;
     }
 }
