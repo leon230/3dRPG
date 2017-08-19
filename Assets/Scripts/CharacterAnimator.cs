@@ -7,19 +7,19 @@ public class CharacterAnimator : MonoBehaviour {
 
     const float animationSmoothTime = 0.1f;
     NavMeshAgent agent;
-    Animator animatior;
+    Animator animator;
 
 	// Use this for initialization
 	void Start () {
         agent = GetComponent<NavMeshAgent>();
-        animatior = GetComponentInChildren<Animator>();
+        animator = GetComponentInChildren<Animator>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
         //Speed divided by max speed
         float speedPercent = agent.velocity.magnitude / agent.speed;
-        animatior.SetFloat("speedPercent", speedPercent, animationSmoothTime, Time.deltaTime);
+        animator.SetFloat("speedPercent", speedPercent, animationSmoothTime, Time.deltaTime);
 
 	}
 }
